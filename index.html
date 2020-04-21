@@ -1,34 +1,48 @@
 ---
 layout: default
-title: Home
+title: Blog
 ---
-<div class="page">
-  
-  <header>
-    <h1 class="landing-title">Hello, world!</h1>
-  </header>
-  
-  <div class="text-center">
-    <p>
-      <i class="fa fa-code-fork fa-3x"></i>
-    </p>
 
-    <p>
-      If you can see this, it means you've successfully set up 
-      <a href="https://github.com/nicoelayda/celeste">Celeste</a> in Jekyll!
-    </p>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-    <p>
-      This is your landing page. It is the first page your users will see when 
-      they visit your website. Perhaps write a little bit about you or your 
-      website here.
-    </p>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    <p>
-      Feel free to dive right in and make your changes to the code!<br />
-      Or check out Celeste on <a href="https://github.com/nicoelayda/celeste">GitHub</a> 
-      to learn more.
-    </p>
-  </div>
-  
+    {{ post.content }}
+  </article>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+      <i class="fa fa-arrow-circle-o-left"></i> 
+      <span class="pagination-text">older posts</span>
+    </a>
+  {% else %}
+    <span class="pagination-item">
+      <i class="fa fa-arrow-circle-o-left"></i> 
+      <span class="pagination-text">older posts</span>
+    </span>
+  {% endif %}
+
+  <!-- <a class="pagination-item" href="#">archive</a> -->
+
+  {% if paginator.previous_page %}
+    <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+      <span class="pagination-text">newer posts</span> 
+      <i class="fa fa-arrow-circle-o-right"></i>
+    </a>
+  {% else %}
+    <span class="pagination-item">
+      <span class="pagination-text">newer posts</span> 
+      <i class="fa fa-arrow-circle-o-right"></i>
+    </span>
+  {% endif %}
 </div>
