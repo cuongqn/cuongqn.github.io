@@ -15,6 +15,7 @@ description: A virtual proof that I'm awesome
 
 # baseurl should be an empty string
 #baseurl: ""
+theme: minimal-mistakes-jekyll
 
 # --- Navigation bar options --- #
 
