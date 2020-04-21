@@ -15,7 +15,7 @@ description: A virtual proof that I'm awesome
 
 # baseurl should be an empty string
 #baseurl: ""
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.19.1"
 
 # --- Navigation bar options --- #
 
@@ -259,6 +259,6 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
+  - jekyll-include-cache
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
