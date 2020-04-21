@@ -4,7 +4,7 @@ gem "github-pages", group: :jekyll_plugins
 
 # enable tzinfo-data for local build
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-# gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll"
 group :jekyll_plugins do
     gem "jekyll-paginate"
     gem "jekyll-sitemap"
