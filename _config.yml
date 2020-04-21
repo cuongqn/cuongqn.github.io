@@ -1,5 +1,5 @@
 # Setup
-title:               Lanyon
+title:               Cuong Nguyen
 tagline:             'A Jekyll theme'
 description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 https://cuongqn.github.io
@@ -9,9 +9,8 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Cuong Nguyen
+  url:               https://twitter.com/cuong_qnguyen
 
 # Gems
 plugins:
