@@ -80,10 +80,16 @@ def pad_collate(batch):
     num_nodes = [len(n) for n in node]
     difference = [int(max(num_nodes) - n) for n in num_nodes]
     
-    adj = [nn.functional.pad(tensor,(0,diff,0,diff)) for tensor, diff in zip(adj, difference)]
+    adj = [
+        nn.functional.pad(tensor,(0,diff,0,diff)) 
+        for tensor, diff in zip(adj, difference)
+    ]
     adj = torch.stack(adj)
     
-    node = [nn.functional.pad(tensor,(0,0,0,diff)) for tensor, diff in zip(node, difference)]
+    node = [
+        nn.functional.pad(tensor,(0,0,0,diff)) 
+        for tensor, diff in zip(node, difference)
+    ]
     node = torch.stack(node)
     
     labels = torch.stack(labels)
