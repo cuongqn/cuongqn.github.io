@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Predicting Chemical Properties with Graph Neural Networks from Scratch with PyTorch
-hidden: true
+hidden: false
 ---
 
 Drug discovery is an expensive process. Specifically, compounds proposed by medicinal chemists need to be tested. To reduce the cost, *in silico* methods have historically been used to prioritize experiments. The prime examples are ML models trained to predict physicochemical properties from fixed chemical descriptors such as the ECFP family. Advances in geometric deep learning have enabled representation learning graphs via the Graph Convolutional Networks (GCN) family. In the blog post I'll walkthrough the math of GCN, build one from scratch, and train a few predictive models.
