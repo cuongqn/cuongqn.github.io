@@ -32,7 +32,7 @@ from functools import lru_cache
 
 ELEMENTS = [1, 5, 6, 7, 8, 9, 16, 17]
 ELEMENTS_VOCAB = {char: i for i, char in enumerate(ELEMENTS)}
-ELEMENTS_VOCAB["unk"] = max(ELEMENTS_VOCAB)+1
+ELEMENTS_VOCAB["unk"] = max(ELEMENTS_VOCAB) + 1
 
 Graph = namedtuple("Graph", ["adjacency", "node_features"])
 
@@ -54,8 +54,10 @@ def smiles2graph(smiles: str) -> Graph:
 
 ### The Dataset Object
 PyTorch sampling is done by using its Dataset class. 
-from torch.utils.data import Dataset
+
 ```python
+from torch.utils.data import Dataset
+
 class MoleculeDataset(Dataset):
     def __init__(self, smiles, labels, featurize_fn):
         self.smiles = smiles
@@ -71,27 +73,32 @@ class MoleculeDataset(Dataset):
         node = torch.Tensor(graph.node_features)
         labels = torch.tensor(self.labels[idx])
         return {"adj": adj, "node": node, "labels": labels}
-    
-
-def pad_collate(batch):
+```
+Each instance returned from `MoleculeDataset` will have different dimensions. We could pre-emptively pad all graphs to the max number of atoms, however that will take up too much memory. A more reasonable is padding by batch. Let's write the custom collate fn!
+```python
+def pad_collate(batch: List[dict]):
+    # Unroll elements in list
     adj = [b["adj"] for b in batch]
     node = [b["node"] for b in batch]
     labels = [b["labels"] for b in batch]
+
+    # Calculate padding dimension
     num_nodes = [len(n) for n in node]
     difference = [int(max(num_nodes) - n) for n in num_nodes]
     
+    # Pad adjacency and node features matrices
     adj = [
         nn.functional.pad(tensor,(0,diff,0,diff)) 
         for tensor, diff in zip(adj, difference)
     ]
-    adj = torch.stack(adj)
-    
     node = [
         nn.functional.pad(tensor,(0,0,0,diff)) 
         for tensor, diff in zip(node, difference)
     ]
+
+    # Stack them batch-first
+    adj = torch.stack(adj)
     node = torch.stack(node)
-    
     labels = torch.stack(labels)
     
     return {"adj": adj, "node": node, "labels": labels}
