@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Predicting Chemical Properties with Graph Neural Networks from Scratch with PyTorch
-hidden: false
+hidden: True
 ---
 
 Recently, there are many new graph neural network architectures being published and various open-source graph frameworks. In the blog post I'll go to back to the basics and build a Graph Convolutional Network from scratch in PyTorch, and use it for molecular property predictions.
