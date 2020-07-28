@@ -16,7 +16,7 @@ This site is intended to serve as a location for my memory dump, including, but 
 
 Nevertheless, I hope you enjoy the blog!
 
-<br>
+<br><br>
 
 ___
 <br>
