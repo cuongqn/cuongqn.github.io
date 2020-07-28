@@ -12,12 +12,11 @@ title: About
 
 Hi there, this is Cuong! I am Machine Learning Engineer at GlaxoSmithKline working at the intersection of AI/ML (duh!) and the complex world of life and physical sciences. 
 
-This site is intended to serve as a location for my memory dump, including, but not limited to, my attempts at reproducing published work, progress updates for personal projects, and perhaps even some of my weekend adventure in the Sierra Nevada with Suz. 
+This site is intended to serve as a location for my memory dump, including, but not limited to, my attempts at reproducing published work, progress updates for personal projects (a.k.a rabbit holes), and perhaps even some of my weekend adventures in the Sierra Nevada with Suz. 
 
 Nevertheless, I hope you enjoy the blog!
 
-<br><br><br>
-
+<br>
 ___
 <br>
 # Publications
