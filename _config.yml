@@ -1,12 +1,13 @@
 # Setup
 title:               Cuong Nguyen blog
 tagline:             'memory dump'
-description:         ''
+description:         'Another machine learing blog'
 url:                 https://cuongqn.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
-
+github:
+  repo: https://github.com/cuongqn
 # About/contact
 author:
   name:              Cuong Nguyen
