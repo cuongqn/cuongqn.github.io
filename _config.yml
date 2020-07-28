@@ -1,7 +1,7 @@
 # Setup
-title:               Cuong Nguyen
-tagline:             'Another machine learning blog...'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:               Cuong Nguyen blog
+tagline:             'memory dump'
+description:         ''
 url:                 https://cuongqn.github.io
 baseurl:             ''
 paginate:            5
@@ -15,7 +15,10 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
-
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
 # Custom vars
 version:             1.1.0
-google_analytics_id: UA-146052-15
+# google_analytics_id: UA-146052-15
