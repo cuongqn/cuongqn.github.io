@@ -5,7 +5,7 @@ hidden: True
 ---
 
 Recently, there are many new graph neural network architectures being published and various open-source graph frameworks. In the blog post I'll go to back to the basics and build a Graph Convolutional Network from scratch in PyTorch, and use it for molecular property predictions.
-### SMILES to graph
+### SMILES To Graph
 I'll be using the lipophilicity dataset for demonstration. The most common format to share compounds is SMILES. First we need to convert SMILES to graphs. In short, we can describe a graph as a tuple of (A, F) where A is the adjacency matrix and F is the node features matrix. The adjacency matrix describes the connectivity between nodes, while the node features matrix describes the content of each node. To convert SMILES to graph we'll use RDkit. First we need to create a RDMol object.
 ```python
 mol = Chem.MolFromSmiles(smiles,sanitize=True)
@@ -103,5 +103,6 @@ def pad_collate(batch: List[dict]):
     
     return {"adj": adj, "node": node, "labels": labels}
 ```
-### Nevergrad for gradient-free optimization
+### Graph Convolutional Network Implementation
+
 

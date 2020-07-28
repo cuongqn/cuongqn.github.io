@@ -2,28 +2,43 @@
 layout: page
 title: About
 ---
+<!-- <div class="circularProfilePic"></div> -->
 
-<p class="message">
+<!-- <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+</p> -->
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+<!-- <div class="CircularProfilePic"></div> -->
 
-There are currently two themes built on Poole:
+Hi there, this is Cuong! I am Machine Learning Engineer at GlaxoSmithKline working at the intersection of AI/ML (duh!) and the complex world of life and physical sciences. This site is intended to serve as a location for my memory dump, including, but not limited to, my attempts at reproducing published work, progress updates for personal projects, and perhaps even some of my weekend adventure in the Sierra Nevada with Suz. 
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Nevertheless, I hope you're having a great day and enjoy the blog! 
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+<br><br><br>
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+___
+<br>
+# Publications
+<ul>
+  <li>
+    <p>
+    <b>Meta-Learning GNN Initializations for Low-Resource Molecular Property Prediction</b><br/>
+    <font size="2"><b>Cuong Quoc Nguyen</b>, Constantine Kreatsoulas, Kim Branson<br/>
+    <a href="https://arxiv.org/abs/2003.05996">[Paper - Preprint]</a> [Code] </font>
+    </p>
+  </li>
+  <li>
+    <p>
+    <b>Improved regressions with convolutional neural networks for surface enhanced Raman scattering sensing of metabolite biomarkers</b><br/>
+    <font size="2">William John Thrift, <b>Cuong Quoc Nguyen</b>, Junlin Wang, Jason Ernest Kahn, Ruijun Dong, Andrew Benjamin Laird, Regina Ragan<br/>
+    <a href="https://doi.org/10.1117/12.2535410">[Paper]</a> [Code] </font>
+    </p>
+  </li>
+  <li>
+    <p>
+    <b>Longitudinal Monitoring of Biofilm Formation via Robust SERS Quantification of Pseudomonas aeruginosa-Produced Metabolites</b><br/>
+    <font size="2"><b>Cuong Quoc Nguyen</b>, William John Thrift, Arunima Bhattacharjee, Saba Ranjbar, Tara Gallagher, Mahsa Darvishzadeh-Varcheie, Robert Noboru Sanderson, Filippo Capolino, Katrine Whiteson, Pierre Baldi, Allon I Hochbaum, Regina Ragan<br/>
+    <a href="https://pubs.acs.org/doi/full/10.1021/acsami.7b18592">[Paper]</a> [Code] </font>
+    </p>
+  </li>   
+</ul>
