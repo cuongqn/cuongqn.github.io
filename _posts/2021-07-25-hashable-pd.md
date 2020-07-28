@@ -36,7 +36,7 @@ pd.DataFrame.__hash__ = lambda self: int(
 ```
 Looking promising!
 ### Always be testing
-Now that we have a way to hash Pandas DataFrame, let's make sure things are working as expected. Specifically two main conditions need to be satisfied:
+Now that we have a means to hash Pandas DataFrame, let's make sure things are working as expected. Specifically two conditions need to be satisfied:
 - `hash(df_1) == hash(df_1.copy())`
 - `hash(df_1) != hash(df_2)`
 
