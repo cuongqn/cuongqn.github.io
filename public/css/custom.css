@@ -5,8 +5,8 @@ ul.social-links {
 }
 
 ul.social-links li a i {
-  background: #205D7A;
-  color: #fff;
+  background: rgb(71, 71, 71);
+  color: rgb(255, 255, 255);
   width: 24px;
   height: 24px;
   border-radius: 20px;
@@ -30,7 +30,7 @@ ul.social-links li a i {
 }
 
 .fa-inverse {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /* [START] Profile Picture */
