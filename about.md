@@ -26,7 +26,7 @@ ___
     <p>
     <b>Meta-Learning GNN Initializations for Low-Resource Molecular Property Prediction</b><br/>
     <font size="2"><b>Cuong Quoc Nguyen</b>, Constantine Kreatsoulas, Kim Branson<br/>
-    ICML 2020 Graph Representation Learning and Beyond Workshop<br/>
+    <i>ICML 2020 Graph Representation Learning and Beyond Workshop</i><br/>
     <a href="https://arxiv.org/abs/2003.05996">[Paper]</a> <a href="https://github.com/GSK-AI/meta-learning-qsar">[Code]</a> </font>
     </p>
   </li>
@@ -34,7 +34,7 @@ ___
     <p>
     <b>Improved regressions with convolutional neural networks for surface enhanced Raman scattering sensing of metabolite biomarkers</b><br/>
     <font size="2">William John Thrift, <b>Cuong Quoc Nguyen</b>, Junlin Wang, Jason Ernest Kahn, Ruijun Dong, Andrew Benjamin Laird, Regina Ragan<br/>
-    SPIE 2019<br/>
+    <i>SPIE 2019</i><br/>
     <a href="https://doi.org/10.1117/12.2535410">[Paper]</a> </font>
     </p>
   </li>
@@ -42,7 +42,7 @@ ___
     <p>
     <b>Longitudinal Monitoring of Biofilm Formation via Robust SERS Quantification of Pseudomonas aeruginosa-Produced Metabolites</b><br/>
     <font size="2"><b>Cuong Quoc Nguyen</b>, William John Thrift, Arunima Bhattacharjee, Saba Ranjbar, Tara Gallagher, Mahsa Darvishzadeh-Varcheie, Robert Noboru Sanderson, Filippo Capolino, Katrine Whiteson, Pierre Baldi, Allon I Hochbaum, Regina Ragan<br/>
-    ACS Applied Materials & Interfaces 2019<br/>
+    <i>ACS Applied Materials & Interfaces 2018</i><br/>
     <a href="https://pubs.acs.org/doi/full/10.1021/acsami.7b18592">[Paper]</a></font>
     </p>
   </li>   
