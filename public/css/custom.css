@@ -33,9 +33,8 @@ ul.social-links li a i {
   color: rgb(255, 255, 255);
 }
 
-ul li {
+ul#social li {
   display: inline;
-  float: left;
 } 
 
 /* [START] Profile Picture */
